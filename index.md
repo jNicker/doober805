@@ -12,3 +12,9 @@ layout: default
 ## [<i class="fab fa-instagram"></i> @doober805](https://www.instagram.com/doober805/)
 
 ## (805) 421-9449
+
+#### Doober805 is a cannabis delivery company that has only the finest cannabis in California. We deliver to all over Ventura County in 45 minutes or less making us the fastest delivery service in the area.
+
+
+
+

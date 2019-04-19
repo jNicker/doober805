@@ -1,42 +1,483 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <img src='assets/images/logo-bus.jpg'/>
-        <img src='assets/images/logo-green.jpg'/>
-      </header>
-      <section>
-        <br/>
-        <br/>
-        {{ content }}
-      </section>
-      <footer>
-        <!-- <p></p> -->
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
+    <div class='container'>
+      <div class='row'>
+        <div class='col-3'>
+          <img src='assets/images/logo-bus.jpg' class='img-fluid'/>
+          <img src='assets/images/logo-green.jpg' class='img-fluid'/>
+        </div>
+        <div class='col-9'>
+          <h1>
+            <a href='https://www.doober805.com' class='text-dark' >www.doober805.com</a>
+          </h1>
+          <hr/>
+          <h3>
+            <a href='https://www.instagram.com/doober805/' class='text-dark'>
+              <i class='fab fa-instagram'></i> @doober805
+            </a>
+          </h3>
+          <h3>
+            (805) 421-9449
+          </h3>
+          <hr/>
+          <h6>
+            Doober805 is a cannabis delivery company that has only the finest cannabis in California. We deliver to all over Ventura County in 45 minutes or less making us the fastest delivery service in the area.
+          </h6>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class='row'>
+
+        <div class='col-3'>
+          <div class='nav flex-column nav-pills' role='tablist'>
+            <a class='nav-link active' data-toggle='pill' href='#v-pills-indica'>Indica</a>
+            <a class='nav-link' data-toggle='pill' href='#v-pills-sativa'>Sativa</a>
+            <a class='nav-link' data-toggle='pill' href='#v-pills-hybrid'>Hybrid</a>
+            <a class='nav-link' data-toggle='pill' href='#v-pills-wax'>Wax</a>
+            <a class='nav-link' data-toggle='pill' href='#v-pills-edibles'>Edibles</a>
+            <a class='nav-link' data-toggle='pill' href='#v-pills-concentrate'>Concentrate</a>
+            <a class='nav-link' data-toggle='pill' href='#v-pills-prerolls'>Pre-Rolls</a>
+          </div>
+        </div>
+
+        <div class='col-9'>
+          <div class='tab-content'>
+
+            <div class='tab-pane show active' id='v-pills-indica' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Banana Punch</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  This wonderful indica hybrid cross between banana kush and purple punch has its own distinct sweet smell. It will definitely leave a wonderful taste in your mouth.  Act fast won’t last long.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/bannana_punch.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Godfather OG</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  This indoor indica strain is one to be desired for those in need of some relief.  Known for its sedative and pain relief properties this flower will be the way to go to catch up on much needed zzzz's
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/godfather_og.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Purple Punch</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  ¼ - $110<br/>
+                  <br/>
+                  This powerful indoor indica will pack that punch.  It’s colorful and sticky with a sweet smell, definitely tickle your taste buds.
+                </div>
+                <div class='col-3'>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+            <div class='tab-pane' id='v-pills-sativa' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Izane In The Membrane</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  This potent sativa has been a powerhouse in the sativa category.  With its orangey and green colors it will catch the eye as well as your taste buds. Perfect for a night out on the town.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/inzane.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Sour Diesel</h6>
+                  <br/>
+                  1/8 - $30<br/>
+                  ¼ - $55<br/>
+                  ½ - $125<br/>
+                  OZ - $200<br/>
+                  <br/>
+                  Greenhouse locally grown strain in the 805. This sativa has beautiful dense buds that make your mouth water!
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/sour_diesel.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+            <div class='tab-pane' id='v-pills-hybrid' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>AK-47</h6>
+                  <br/>
+                  1/8 - $40<br/>
+                  ¼ - $70<br/>
+                  ½ -$125<br/>
+                  OZ - $200<br/>
+                  <br/>
+                  This light-dep has a mellow smell with a big kick. A fan favorite and award winning strain is now on the Doober menu. act quick it won’t last long
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/ak47.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Blueberry Shortcake</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  ¼ - $110<br/>
+                  ½ - $175<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  Wow this flower actually smells sweet like blueberries.  This indica dominant hybrid will definitely be the after dinner desert you're looking for!
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/blueberry_shortcake.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Clementine</h6>
+                  <br/>
+                  1/8 - $40<br/>
+                  ¼ - $70<br/>
+                  ½ - $125<br/>
+                  OZ - $165<br/>
+                  <br/>
+                  These pretty little indoor buds have a strong scent that will definitely leave your taste buds tingling. These are little buds just so you know but still do their job.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/clementine.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Cookies</h6>
+                  <br/>
+                  1/8 - $40<br/>
+                  ¼ - $70<br/>
+                  ½ - $125<br/>
+                  OZ - $165<br/>
+                  <br/>
+                  This indica dominant hybrid comes in the form of small buds and strong scent.  Please keep in mind this indoor bud has small buds.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/cookies.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Gorilla Glue</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  ¼ - $110<br/>
+                  ½ - $175<br/>
+                  OZ - $275<br/>
+                  <br/>
+                  This indoor bud is a fan favorite from its strong smell to its sticky buds. It goes down smooth and will make your mouth water.  Act fast it won’t last long at all so scoop up this indica hybrid before it’s gone.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/gorilla_glue.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>LA Glue</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  OZ - $300<br/>
+                  <br/>
+                  This hybrid of la confidential and gorilla glue is sure to leave a great experience. It’s big sticky with a nice skunky smell.  This bud will definitely do the trick
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/la_glue.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>OG</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  ¼ - $110<br/>
+                  ½ - $175<br/>
+                  OZ -$250<br/>
+                  <br/>
+                  This popular strain created here in SoCal has a pungent citrus smell.  This potent hybrid offers a focused head high with a mellow overall feeling.  Great flower to just chill with friends.  Like forbidden fruit these buds are huge some weighing over 4 grams
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/og.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Purple Cookies</h6>
+                  <br/>
+                  1/8 -$60<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  This indica hybrid packs the punch that all top shelf should have.  With its wonderful scent and smooth flavor. You will definitely kick yourself for skipping on this one. Limited quantity so get it while it’s hot!!
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/purple_cookies.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Sunset Sherbert</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  1/4- $110<br/>
+                  <br/>
+                  This sweet and sticky flower definitely will leave you wanting more.  Its sweet smell alone is enough to make your mouth water. limited quantity so act fast
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/sunset_sherbert.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Tahoe OG</h6>
+                  <br/>
+                  1/8 - $60<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  This sticky hybrid is a perfect way to chill out and have a great end of your day. Indica dominant hybrid with a little sativa mixed in.  Get it while it lasts quantity is limited
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/tahoe_og.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Tropic Heat</h6>
+                  <br/>
+                  1/8 - $50<br/>
+                  ¼ - $90<br/>
+                  ½ - $150<br/>
+                  OZ - $250<br/>
+                  <br/>
+                  This nice frosty hybrid of purple punch and XKB OG packs a nice punch
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/tropic_heat.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+            <div class='tab-pane' id='v-pills-wax' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Wax</h6>
+                  <br/>
+                  prices by gram<br/>
+                  1G - $30<br/>
+                  <br/>
+                  1G Wax/Shatter
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/wax.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+            <div class='tab-pane' id='v-pills-edibles' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Chocolate Chip Cookie</h6>
+                  <br/>
+                  $15<br/>
+                  <br/>
+                  This 300mg cannabis infused chocolate chip cookie will definitely leave you wanting more.  Be sure to have your glass of milk handy. These cookies and all of our edibles are made here locally in the 805.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/chocolate_chip_cookie.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Doober Bar Crunch</h6>
+                  <br/>
+                  $25<br/>
+                  <br/>
+                  This baddy chocolate bar is expresso infused with 100mg of THC. The bottom of the bar is coated with chocolate chip THC infused cookie crumbles.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/doober_bar_crunch.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Doober Bar!!</h6>
+                  <br/>
+                  $20<br/>
+                  <br/>
+                  Freshly made Doober bars!! Specially made for us to bring out to you guys. Espresso infused chocolate with 80mg of THC.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/doober_bar.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Fruity Pebble Rice Krispie Treats</h6>
+                  <br/>
+                  $15<br/>
+                  <br/>
+                  Made here in the 805 these treats will bring out the kid in you.  Made with 100% pure coconut oil infused with 250mg of cannabis and some of your favorite cereals.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/fruity_pebbles.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+
+            <div class='tab-pane' id='v-pills-concentrate' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Exotic Cart Jet Fuel</h6>
+                  <br/>
+                  $40<br/>
+                  <br/>
+                  This is a tasty indica perfect way to chill.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/jet_fuel.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Exotic Carts Strawberry-Lemonade</h6>
+                  <br/>
+                  $40<br/>
+                  <br/>
+                  1gram Cartridge
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/strawberry_lemonade.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Exotic Carts King Louie XIII</h6>
+                  <br/>
+                  $40<br/>
+                  <br/>
+                  Another tasty indica ready to help take the edge off.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/king_louie.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Exotic Carts Maui Wowie</h6>
+                  <br/>
+                  $40<br/>
+                  <br/>
+                  This tasty sativa is great way to get that little creative pick me up and keep you going throughout your day.
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/maui_wowie.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Exotic Carts Strawberry Cough</h6>
+                  <br/>
+                  $40<br/>
+                  <br/>
+                  1 gram cartridge
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/strawberry_cough.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>Exotic Carts White Fire OG</h6>
+                  <br/>
+                  $40<br/>
+                  <br/>
+                  This is a hybrid exotic cartridge
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/white_fire.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+            <div class='tab-pane' id='v-pills-prerolls' role='tabpanel'>
+              <div class='row'>
+                <div class='col-9'>
+                  <h6>PRE-ROLL</h6>
+                  <br/>
+                  $15<br/>
+                  <br/>
+                  This king size cone is packed with indoor GSC total weight is 1.5g
+                </div>
+                <div class='col-3'>
+                  <img src='assets/images/pre_roll.jpg' class='img-fluid rounded'/>
+                </div>
+              </div>
+              <hr/>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
